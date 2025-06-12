@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Workshop</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Culture Workshop</h1>
+        <p>Ласкаво просимо до Custom Culture Workshop — місця, де ваша уява зустрічається з мистецтвом кастомізації. </p>
+
+        <p>Ми спеціалізуємось на унікальному дизайні одягу, взуття та аксесуарів, що відображають вашу індивідуальність.</p>
+
+        <p>Унікальний досвід кастомізації речей — від кедів до курток.</p>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoOJ9nebb8or81mcidYo7Q2v0en930zLaTUg&s" alt="workshop" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <h2>Наші послуги</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Кастомізація кедів, курток та рюкзаків</li>
+            <li>Майстер-класи та воркшопи</li>
+            <li>Індивідуальні замовлення для подій</li>
+        </ul>
+
+        <h3>Відгуки</h3>
+        <div id="reviews"></div>
+
+        <button id="orderBtn">Залишити заявку</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Залишити заявку</h2>
+            <form id="orderForm">
+                <input type="text" name="name" placeholder="Ім’я" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <textarea name="message" placeholder="Ваше повідомлення" required></textarea><br>
+                <button type="submit">Відправити</button>
+            </form>
+            <p id="successMsg" class="success" style="display: none;">Заявку надіслано!</p>
+            <p id="errorMsg" class="error" style="display: none;">Сталася помилка. Спробуйте ще раз.</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
